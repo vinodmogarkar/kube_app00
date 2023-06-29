@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.catalog.jdbc.FindProductsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:50" hostname="DESKTOP-3OMJI0S" time="0.026">
+  <properties/>
+  <testcase name="all_products_are_found()" classname="com.home.eshopee.sales.catalog.jdbc.FindProductsTest" time="0.009"/>
+  <testcase name="unknown_product_found_for_an_unknown_id()" classname="com.home.eshopee.sales.catalog.jdbc.FindProductsTest" time="0.006"/>
+  <testcase name="product_by_id_is_found()" classname="com.home.eshopee.sales.catalog.jdbc.FindProductsTest" time="0.009"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:50.470+05:30  INFO 12424 --- [    Test worker] c.h.e.s.catalog.jdbc.FindProductsTest    : Starting FindProductsTest using Java 17.0.1 with PID 12424 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\catalog\jdbc)
+2023-04-28T19:38:50.471+05:30  INFO 12424 --- [    Test worker] c.h.e.s.catalog.jdbc.FindProductsTest    : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:50.520+05:30  INFO 12424 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:38:50.541+05:30  INFO 12424 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:879e9fea-6590-47f5-b617-27760a13941b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:38:50.568+05:30  INFO 12424 --- [    Test worker] c.h.e.s.catalog.jdbc.FindProductsTest    : Started FindProductsTest in 0.118 seconds (process running for 2.777)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

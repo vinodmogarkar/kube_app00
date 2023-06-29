@@ -1,0 +1,10 @@
+-classpath 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\domain\\build\\classes\\java\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\domain\\build\\resources\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\common\\primitives\\build\\classes\\java\\main;C:\\Users\\ADMIN\\.gradle\\caches\\modules-2\\files-2.1\\org.projectlombok\\lombok\\1.18.26\\8f8cf0372abf564913e9796623aac4c8ea44025a\\lombok-1.18.26.jar'
+-d 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\domain\\build\\docs\\javadoc'
+-doctitle 'dispatching-domain 2.0-SNAPSHOT API'
+-html5 
+-notimestamp 
+-quiet 
+-windowtitle 'dispatching-domain 2.0-SNAPSHOT API'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\dispatching\\Dispatching.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\dispatching\\DispatchingSaga.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\dispatching\\OrderId.java'

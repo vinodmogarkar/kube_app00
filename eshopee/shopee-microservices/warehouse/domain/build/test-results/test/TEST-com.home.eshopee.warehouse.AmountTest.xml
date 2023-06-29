@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.warehouse.AmountTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:51" hostname="DESKTOP-3OMJI0S" time="0.049">
+  <properties/>
+  <testcase name="zero_amount_has_zero_value()" classname="com.home.eshopee.warehouse.AmountTest" time="0.042"/>
+  <testcase name="amount_is_added()" classname="com.home.eshopee.warehouse.AmountTest" time="0.0"/>
+  <testcase name="amount_fails_for_a_value_less_than_zero()" classname="com.home.eshopee.warehouse.AmountTest" time="0.002"/>
+  <testcase name="amount_value()" classname="com.home.eshopee.warehouse.AmountTest" time="0.001"/>
+  <testcase name="amount_is_compared()" classname="com.home.eshopee.warehouse.AmountTest" time="0.001"/>
+  <testcase name="amount_is_subtracted()" classname="com.home.eshopee.warehouse.AmountTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

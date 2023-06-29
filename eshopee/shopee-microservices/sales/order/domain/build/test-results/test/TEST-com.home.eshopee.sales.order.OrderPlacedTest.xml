@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.order.OrderPlacedTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:03" hostname="DESKTOP-3OMJI0S" time="0.008">
+  <properties/>
+  <testcase name="when_is_set()" classname="com.home.eshopee.sales.order.OrderPlacedTest" time="0.001"/>
+  <testcase name="order_items_are_set()" classname="com.home.eshopee.sales.order.OrderPlacedTest" time="0.005"/>
+  <testcase name="order_id_is_set()" classname="com.home.eshopee.sales.order.OrderPlacedTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

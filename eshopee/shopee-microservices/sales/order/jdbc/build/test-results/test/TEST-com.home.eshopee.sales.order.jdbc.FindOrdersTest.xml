@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.order.jdbc.FindOrdersTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:08" hostname="DESKTOP-3OMJI0S" time="0.106">
+  <properties/>
+  <testcase name="unknown_product_found_for_an_unknown_id()" classname="com.home.eshopee.sales.order.jdbc.FindOrdersTest" time="0.079"/>
+  <testcase name="order_by_id_is_found()" classname="com.home.eshopee.sales.order.jdbc.FindOrdersTest" time="0.025"/>
+  <system-out><![CDATA[19:39:07.622 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.sales.order.jdbc.FindOrdersTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:39:07.657 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using ContextCustomizers for test class [FindOrdersTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+19:39:07.669 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [jakarta/servlet/ServletContext]
+19:39:07.681 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using TestExecutionListeners for test class [FindOrdersTest]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:39:07.682 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [FindOrdersTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:07.953+05:30  INFO 3336 --- [    Test worker] c.h.e.sales.order.jdbc.FindOrdersTest    : Starting FindOrdersTest using Java 17.0.1 with PID 3336 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\order\jdbc)
+2023-04-28T19:39:07.954+05:30  INFO 3336 --- [    Test worker] c.h.e.sales.order.jdbc.FindOrdersTest    : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:08.201+05:30  INFO 3336 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:08.712+05:30  INFO 3336 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:c32261c3-77b0-42f5-9786-1c6741efb27c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:08.939+05:30  INFO 3336 --- [    Test worker] c.h.e.sales.order.jdbc.FindOrdersTest    : Started FindOrdersTest in 1.22 seconds (process running for 2.055)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

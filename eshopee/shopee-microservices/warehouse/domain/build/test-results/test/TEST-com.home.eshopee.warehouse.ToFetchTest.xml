@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.warehouse.ToFetchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:51" hostname="DESKTOP-3OMJI0S" time="0.001">
+  <properties/>
+  <testcase name="to_fetch_values()" classname="com.home.eshopee.warehouse.ToFetchTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

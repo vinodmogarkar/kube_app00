@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.billing.payment.jdbc.FindPaymentsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:16" hostname="DESKTOP-3OMJI0S" time="0.03">
+  <properties/>
+  <testcase name="all_payments_are_found()" classname="com.home.eshopee.billing.payment.jdbc.FindPaymentsTest" time="0.03"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:16.290+05:30  INFO 5900 --- [    Test worker] c.h.e.b.payment.jdbc.FindPaymentsTest    : Starting FindPaymentsTest using Java 17.0.1 with PID 5900 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\billing\payment\jdbc)
+2023-04-28T19:38:16.290+05:30  INFO 5900 --- [    Test worker] c.h.e.b.payment.jdbc.FindPaymentsTest    : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:16.341+05:30  INFO 5900 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:38:16.358+05:30  INFO 5900 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f0f1790a-9ea2-419b-a74d-4202b7c91675;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:38:16.381+05:30  INFO 5900 --- [    Test worker] c.h.e.b.payment.jdbc.FindPaymentsTest    : Started FindPaymentsTest in 0.107 seconds (process running for 2.293)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

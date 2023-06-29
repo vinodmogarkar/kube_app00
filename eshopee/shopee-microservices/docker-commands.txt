@@ -1,0 +1,120 @@
+
+
+docker ps -a 
+docker stop 48c2710eeb1e
+docker rm <container name >
+docker rmi <image name / image id>
+
+docker build -t ${IMAGE}:${VERSION} .
+
+docker build -t redis:6 .
+
+docker build -t home/eshopee-reverseproxy .
+
+docker build -t home/eshopee-payment-service:latest .
+docker build -t home/eshopee-portal-service:latest .
+
+docker build -t home/eshopee-cart-service .
+docker build -t home/eshopee-catalog-service .
+docker build -t home/eshopee-order-service .
+
+docker build -t home/eshopee-shipping-service .
+
+shipping-service 
+{
+	home/eshopee-delivery-service
+	home/eshopee-dispatching-service
+	home/eshopee-warehouse-service
+}
+
+
+ docker run -d -p 8081:8080 --name portal  home/eshopee-portal-service:latest
+
+docker tag ${IMAGE}:${VERSION} ${IMAGE}:latest
+
+
+  database:
+    host: localhost
+    port: 5432
+    dbname: postgres
+	
+
+docker run --name postgresql1 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=secret  -p 5432:5432 -d postgres:13
+docker run --name postgresqlLatest -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=secret  -p 5432:5432 -d postgres:latest
+
+docker run --name postgresql -e POSTGRES_USER=myusername -e POSTGRES_PASSWORD=mypassword -p 5432:5432 -v /data:/var/lib/postgresql/data -d postgres
+    PostgreSQL is the name of the Docker Container.
+    -e POSTGRES_USER is the parameter that sets a unique username to the Postgres database.
+    -e POSTGRES_PASSWORD is the parameter that allows you to set the password of the Postgres database.
+    -p 5432:5432 is the parameter that establishes a connection between the Host Port and Docker Container Port. In this case, both ports are given as 5432, which indicates requests sent to the Host Ports will automatically redirect to the Docker Container Port. In addition, 5432 is also the same port where PostgreSQL will be accepting requests from the client.
+    -v is the parameter that synchronizes the Postgres data with the local folder. This ensures that Postgres data will be safely present within the Home Directory even if the Docker Container is terminated.
+    -d is the parameter that runs the Docker Container in the detached mode, i.e., in the background. If you accidentally close or terminate the Command Prompt, the Docker Container will still run in the background.
+    Postgres is the name of the Docker image that was previously downloaded to run the Docker Container.
+	
+	
+	
+	docker container run -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=secret  -p 5432:5432 -d postgres:13
+	docker container run --rm -e "SPRING_PROFILES_ACTIVE=redis,postgres" -p 8080:8001 home/eshopee-payment-service
+	
+	
+ddd-example-eshopee 
+	secret
+	
+	-Dspring.profiles.active=postgres
+	
+	@ActiveProfiles("postgres")
+	
+	
+	docker run -e "SPRING_PROFILES_ACTIVE=postgres,redis" docker-with-spring-profile:latest
+	
+	docker run --name cart1 -e "SPRING_PROFILES_ACTIVE=postgres,redis" -p 8080:8080 -d home/eshopee-cart-service:latest
+	
+	
+		
+	
+	
+	docker run --name redis6 -p 6379:6379 -d redis:6
+	
+	
+	
+	
+	docker run --name catalog1 -e "SPRING_PROFILES_ACTIVE=postgres,redis" -p 8080:8080 -d home/eshopee-catalog-service  --link postgresql1 catalog1
+	
+	docker run --name catalog1 -e "SPRING_PROFILES_ACTIVE=postgres,redis" --network=host -p 8080:8080 -d home/eshopee-catalog-service  
+	
+	
+	--link localhost home/eshopee-catalog-service
+	
+	
+	
+	docker run --name cart1 -e "SPRING_PROFILES_ACTIVE=postgres,redis" --network=host -p 8080:8080 -d home/eshopee-cart-service 
+	
+	https://dev.to/peholmst/knee-deep-in-spring-boot-transactional-event-listeners-and-cglib-proxies-1il9
+	
+	docker run --name shipping1 -e "SPRING_PROFILES_ACTIVE=postgres,redis" -p 8080:8080 -d home/eshopee-shipping-service
+	
+	
+	https://www.baeldung.com/spring-boot-dependency
+	https://medium.com/publicis-sapient-france/import-spring-boot-application-as-a-maven-dependency-a25e03e5c3a
+	https://codingnconcepts.com/spring-boot/spring-boot-project-as-dependency/
+	
+	docker run --rm --name rabbitmq-broker -p 5672:5672 -d rabbitmq:3
+	
+
+docker start redis6
+docker start postgresql1
+
+docker exec -it 26dd135a96d1 bash
+
+docker start payment1 
+
+
+docker run --name payment1  -e "SPRING_PROFILES_ACTIVE=postgres" -p 8080:8080 -d home/eshopee-payment-service:latest
+
+
+
+docker run --name redis -p 6379:6379 -d redis:v1
+docker container run -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=secret  -p 5432:5432 -d postgres:13
+
+
+docker run --name redis -p 6379:6379 -d redis:6

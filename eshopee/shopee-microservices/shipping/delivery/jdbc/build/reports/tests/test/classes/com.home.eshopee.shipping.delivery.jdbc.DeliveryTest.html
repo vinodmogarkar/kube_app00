@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - DeliveryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>DeliveryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.home.eshopee.shipping.delivery.jdbc.html">com.home.eshopee.shipping.delivery.jdbc</a> &gt; DeliveryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.147s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">delivery_can_be_dispatched_only_once()</td>
+<td class="success">0.012s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delivery_can_be_prepared_only_once()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delivery_has_values()</td>
+<td class="success">0.092s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delivery_is_dispatched()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delivery_is_found_by_order_id()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">delivery_is_prepared(JdbcTemplate)</td>
+<td class="success">0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">dispatched_delivery_can_not_be_dispatched()</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>19:39:25.757 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.shipping.delivery.jdbc.DeliveryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:39:25.790 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using ContextCustomizers for test class [DeliveryTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+19:39:25.802 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [jakarta/servlet/ServletContext]
+19:39:25.810 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using TestExecutionListeners for test class [DeliveryTest]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:39:25.811 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [DeliveryTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:26.087+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryTest       : Starting DeliveryTest using Java 17.0.1 with PID 16512 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\shipping\delivery\jdbc)
+2023-04-28T19:39:26.088+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryTest       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-04-28T19:39:26.312+05:30  INFO 16512 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:26.828+05:30  INFO 16512 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d39f80e0-8631-4aa5-bcad-1f2c0bec8209;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:27.063+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryTest       : Started DeliveryTest in 1.214 seconds (process running for 2.046)
+2023-04-28T19:39:27.168+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery dispatched: DeliveryJdbc(DeliveryId(101), OrderId(1001), Address(Person(Test PersonA), Place(Test Place 1)))
+2023-04-28T19:39:27.195+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery prepared: DeliveryJdbc(DeliveryId(aec8acb6-ec3c-4b72-a392-86ec0cb308b0), OrderId(aec8acb6-ec3c-4b72-a392-86ec0cb308b0), Address(Person(Test Test), Place(test)))
+2023-04-28T19:39:27.208+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery dispatched: DeliveryJdbc(DeliveryId(101), OrderId(1001), Address(Person(Test PersonA), Place(Test Place 1)))
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at 28-Apr-2023, 7:39:27 pm</p>
+</div>
+</div>
+</body>
+</html>

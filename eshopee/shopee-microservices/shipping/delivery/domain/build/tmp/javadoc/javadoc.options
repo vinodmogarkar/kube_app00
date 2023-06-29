@@ -1,0 +1,18 @@
+-classpath 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\build\\classes\\java\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\build\\resources\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\events\\build\\classes\\java\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\common\\primitives\\build\\classes\\java\\main;C:\\Users\\ADMIN\\.gradle\\caches\\modules-2\\files-2.1\\org.projectlombok\\lombok\\1.18.26\\8f8cf0372abf564913e9796623aac4c8ea44025a\\lombok-1.18.26.jar;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\common\\events\\build\\classes\\java\\main'
+-d 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\build\\docs\\javadoc'
+-doctitle 'delivery-domain 2.0-SNAPSHOT API'
+-html5 
+-notimestamp 
+-quiet 
+-windowtitle 'delivery-domain 2.0-SNAPSHOT API'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\Address.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\Delivery.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\DeliveryId.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\DeliveryInfo.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\DeliveryInfos.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\DispatchDelivery.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\FindDeliveries.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\OrderId.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\Person.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\Place.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\delivery\\domain\\src\\main\\java\\com\\home\\eshopee\\shipping\\delivery\\PrepareDelivery.java'

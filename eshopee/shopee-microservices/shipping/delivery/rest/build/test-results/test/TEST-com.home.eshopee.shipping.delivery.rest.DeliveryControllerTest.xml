@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.shipping.delivery.rest.DeliveryControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:31" hostname="DESKTOP-3OMJI0S" time="0.226">
+  <properties/>
+  <testcase name="delivery_by_order_is_listed()" classname="com.home.eshopee.shipping.delivery.rest.DeliveryControllerTest" time="0.151"/>
+  <testcase name="delivery_is_prepared()" classname="com.home.eshopee.shipping.delivery.rest.DeliveryControllerTest" time="0.053"/>
+  <testcase name="all_deliveries_are_listed()" classname="com.home.eshopee.shipping.delivery.rest.DeliveryControllerTest" time="0.019"/>
+  <system-out><![CDATA[19:39:30.234 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.shipping.delivery.rest.DeliveryControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:39:30.277 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [DeliveryControllerTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+19:39:30.299 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+19:39:30.300 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+19:39:30.306 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [DeliveryControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:39:30.307 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [DeliveryControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:30.599+05:30  INFO 22244 --- [    Test worker] c.h.e.s.d.rest.DeliveryControllerTest    : Starting DeliveryControllerTest using Java 17.0.1 with PID 22244 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\shipping\delivery\rest)
+2023-04-28T19:39:30.601+05:30  INFO 22244 --- [    Test worker] c.h.e.s.d.rest.DeliveryControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:31.580+05:30  INFO 22244 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-28T19:39:31.581+05:30  INFO 22244 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-28T19:39:31.584+05:30  INFO 22244 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-28T19:39:31.605+05:30  INFO 22244 --- [    Test worker] c.h.e.s.d.rest.DeliveryControllerTest    : Started DeliveryControllerTest in 1.259 seconds (process running for 2.078)
+2023-04-28T19:39:31.692+05:30  WARN 22244 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.home.eshopee.shipping.delivery.rest.DeliveryController
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

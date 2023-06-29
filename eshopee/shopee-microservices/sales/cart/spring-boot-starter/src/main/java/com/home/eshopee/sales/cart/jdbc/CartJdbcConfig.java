@@ -1,0 +1,19 @@
+package com.home.eshopee.sales.cart.jdbc;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.home.eshopee.sales.cart.jdbc.RetrieveCartJdbc;
+
+/**
+ * Configuration for JDBC implementation for Cart service.
+ */
+@Configuration
+class CartJdbcConfig {
+
+    @Bean
+    RetrieveCartJdbc retrieveCartJdbc(JdbcTemplate jdbcTemplate) {
+        return new RetrieveCartJdbc(jdbcTemplate);
+    }
+}

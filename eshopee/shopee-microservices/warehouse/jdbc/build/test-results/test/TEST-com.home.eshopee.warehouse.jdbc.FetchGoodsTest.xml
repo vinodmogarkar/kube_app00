@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.warehouse.jdbc.FetchGoodsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:55" hostname="DESKTOP-3OMJI0S" time="0.128">
+  <properties/>
+  <testcase name="fetching_decrease_amount_in_the_stock()" classname="com.home.eshopee.warehouse.jdbc.FetchGoodsTest" time="0.097"/>
+  <testcase name="fetched_goods_raises_an_event()" classname="com.home.eshopee.warehouse.jdbc.FetchGoodsTest" time="0.015"/>
+  <testcase name="cannot_decrease_amount_under_zero()" classname="com.home.eshopee.warehouse.jdbc.FetchGoodsTest" time="0.006"/>
+  <testcase name="missed_goods_raises_an_event()" classname="com.home.eshopee.warehouse.jdbc.FetchGoodsTest" time="0.006"/>
+  <system-out><![CDATA[19:37:54.586 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.warehouse.jdbc.FetchGoodsTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:37:54.621 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using ContextCustomizers for test class [FetchGoodsTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+19:37:54.633 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [jakarta/servlet/ServletContext]
+19:37:54.641 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using TestExecutionListeners for test class [FetchGoodsTest]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:37:54.641 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [FetchGoodsTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:37:54.920+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.FetchGoodsTest      : Starting FetchGoodsTest using Java 17.0.1 with PID 10496 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\warehouse\jdbc)
+2023-04-28T19:37:54.921+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.FetchGoodsTest      : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:37:55.141+05:30  INFO 10496 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:37:55.656+05:30  INFO 10496 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:cacbaa71-2579-4ee3-9acb-3b4e0d17d40c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:37:55.894+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.FetchGoodsTest      : Started FetchGoodsTest in 1.217 seconds (process running for 2.03)
+2023-04-28T19:37:55.963+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.GoodsFetchingJdbc   : Goods fetched: [ToFetch(ProductId(7d18aba8-5893-4492-9755-c9e52065b2ac), Amount(1))]
+2023-04-28T19:37:56.006+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.GoodsFetchingJdbc   : Goods fetched: [ToFetch(ProductId(3d908e4f-60d3-4d23-b012-30f94a7e19b1), Amount(1))]
+2023-04-28T19:37:56.023+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.GoodsFetchingJdbc   : Goods fetched: [ToFetch(ProductId(26f4d7e0-6ae8-486e-9d34-f2fcda11049e), Amount(2))]
+2023-04-28T19:37:56.029+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.GoodsFetchingJdbc   : Goods fetched: [ToFetch(ProductId(f39d3bce-cbe9-4cd6-8c91-90c0f476aeb1), Amount(99))]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

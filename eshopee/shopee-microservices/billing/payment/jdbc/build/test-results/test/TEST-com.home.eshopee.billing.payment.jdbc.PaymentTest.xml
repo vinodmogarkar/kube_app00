@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.billing.payment.jdbc.PaymentTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:16" hostname="DESKTOP-3OMJI0S" time="0.047">
+  <properties/>
+  <testcase name="cannot_request_already_collected_payment()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.008"/>
+  <testcase name="cannot_request_already_requested_payment()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.004"/>
+  <testcase name="payment_values()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.004"/>
+  <testcase name="payment_is_requested()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.004"/>
+  <testcase name="cannot_collect_already_collected_payment()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.004"/>
+  <testcase name="collected_payment_raises_an_event()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.008"/>
+  <testcase name="payment_is_collected()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.005"/>
+  <testcase name="cannot_collect_unrequested_payment()" classname="com.home.eshopee.billing.payment.jdbc.PaymentTest" time="0.003"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:16.439+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentTest   : Starting PaymentTest using Java 17.0.1 with PID 5900 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\billing\payment\jdbc)
+2023-04-28T19:38:16.439+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentTest   : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:16.483+05:30  INFO 5900 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:38:16.497+05:30  INFO 5900 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:f37e4f5c-5b69-4a18-83b9-9068c33326d6;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:38:16.513+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentTest   : Started PaymentTest in 0.09 seconds (process running for 2.425)
+2023-04-28T19:38:16.518+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment requested: PaymentJdbc(ReferenceId(123), Money(123.5))
+2023-04-28T19:38:16.518+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment collected: PaymentJdbc(ReferenceId(123), Money(123.5))
+2023-04-28T19:38:16.526+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment requested: PaymentJdbc(ReferenceId(123), Money(123.5))
+2023-04-28T19:38:16.536+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment requested: PaymentJdbc(ReferenceId(123), Money(123.5))
+2023-04-28T19:38:16.540+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment requested: PaymentJdbc(ReferenceId(123), Money(123.5))
+2023-04-28T19:38:16.541+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment collected: PaymentJdbc(ReferenceId(123), Money(123.5))
+2023-04-28T19:38:16.545+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment requested: PaymentJdbc(ReferenceId(TEST123), Money(123.5))
+2023-04-28T19:38:16.546+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment collected: PaymentJdbc(ReferenceId(TEST123), Money(123.5))
+2023-04-28T19:38:16.554+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment requested: PaymentJdbc(ReferenceId(123), Money(123.5))
+2023-04-28T19:38:16.555+05:30  INFO 5900 --- [    Test worker] c.h.e.billing.payment.jdbc.PaymentJdbc   : Payment collected: PaymentJdbc(ReferenceId(123), Money(123.5))
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

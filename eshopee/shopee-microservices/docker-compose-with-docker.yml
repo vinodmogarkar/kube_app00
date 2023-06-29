@@ -1,0 +1,145 @@
+version: '3.7'
+
+volumes:
+  data:
+
+services:
+  redis:
+    container_name: redis
+    image: redis:${REDIS_VERSION:-6}
+#    build: ./redis
+    hostname: redis
+    command:
+      - redis-server
+    ports:
+      - "6379:6379"
+    
+
+  postgres:
+    image: postgres:${POSTGRES_VERSION:-13}
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    volumes:
+    - ${POSTGRES_DATA:-data}:/var/lib/postgresql/data
+    ports:
+    - 5432:5432
+
+  reverseproxy:
+    image: home/eshopee-reverseproxy
+    ports:
+    - ${PORT:-8080}:80
+    depends_on:
+    - portal
+    - catalog
+    - order
+    - cart
+    - payment
+    - delivery
+    - dispatching
+    - warehouse
+
+  portal:
+    image: home/eshopee-portal-service
+    depends_on:
+    - redis
+    - postgres
+
+  catalog:
+    image: home/eshopee-catalog-service
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-postgres}
+#      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-redis,postgres}      
+      ESHOPEE_BROKER_HOST: redis
+      ESHOPEE_DATABASE_HOST: postgres
+      ESHOPEE_DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "8081:8080"      
+    depends_on:
+    - redis
+    - postgres
+
+  order:
+    image: home/eshopee-order-service
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-postgres}
+#      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-redis,postgres}
+      ESHOPEE_BROKER_HOST: redis
+      ESHOPEE_DATABASE_HOST: postgres
+      ESHOPEE_DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "8082:8080"
+    depends_on:
+    - redis
+    - postgres
+
+  cart:
+    image: home/eshopee-cart-service
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-postgres}
+#      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-redis,postgres}
+      ESHOPEE_BROKER_HOST: redis
+      ESHOPEE_DATABASE_HOST: postgres
+      ESHOPEE_DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "8083:8080"      
+    depends_on:
+    - redis
+    - postgres
+
+  payment:
+    image: home/eshopee-payment-service
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-postgres}
+#      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-redis,postgres}
+      ESHOPEE_BROKER_HOST: redis
+      ESHOPEE_DATABASE_HOST: postgres
+      ESHOPEE_DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "8084:8080"      
+    depends_on:
+    - redis
+    - postgres
+    
+    
+
+  delivery:
+    image: home/eshopee-delivery-service
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-postgres}    
+#      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-redis,postgres}
+      ESHOPEE_BROKER_HOST: redis
+      ESHOPEE_DATABASE_HOST: postgres
+      ESHOPEE_DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "8085:8080"      
+    depends_on:
+    - redis
+    - postgres
+
+  dispatching:
+    image: home/eshopee-dispatching-service
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-postgres}    
+#      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-redis,postgres}
+      ESHOPEE_BROKER_HOST: redis
+      ESHOPEE_DATABASE_HOST: postgres
+      ESHOPEE_DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "8086:8080"      
+    depends_on:
+    - redis
+    - postgres
+
+  warehouse:
+    image: home/eshopee-warehouse-service
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-postgres}    
+#      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES:-redis,postgres}
+      ESHOPEE_BROKER_HOST: redis
+      ESHOPEE_DATABASE_HOST: postgres
+      ESHOPEE_DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-secret}
+    ports:
+      - "8087:8080"      
+    depends_on:
+    - redis
+    - postgres

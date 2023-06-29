@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.shipping.delivery.jdbc.PrepareDeliveryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:27" hostname="DESKTOP-3OMJI0S" time="0.036">
+  <properties/>
+  <testcase name="prepared_delivery_raises_an_event()" classname="com.home.eshopee.shipping.delivery.jdbc.PrepareDeliveryTest" time="0.026"/>
+  <testcase name="delivery_for_order_is_prepared()" classname="com.home.eshopee.shipping.delivery.jdbc.PrepareDeliveryTest" time="0.008"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:27.558+05:30  INFO 16512 --- [    Test worker] c.h.e.s.d.jdbc.PrepareDeliveryTest       : Starting PrepareDeliveryTest using Java 17.0.1 with PID 16512 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\shipping\delivery\jdbc)
+2023-04-28T19:39:27.558+05:30  INFO 16512 --- [    Test worker] c.h.e.s.d.jdbc.PrepareDeliveryTest       : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:27.608+05:30  INFO 16512 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:27.623+05:30  INFO 16512 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:533f9d6b-74ee-415f-9509-c83da43b3dc6;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:27.651+05:30  INFO 16512 --- [    Test worker] c.h.e.s.d.jdbc.PrepareDeliveryTest       : Started PrepareDeliveryTest in 0.106 seconds (process running for 2.635)
+2023-04-28T19:39:27.657+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery prepared: DeliveryJdbc(DeliveryId(a23d50cf-fdab-4759-970f-1bf8a7829510), OrderId(TEST123), Address(Person(Test Person), Place(Test Address 123)))
+2023-04-28T19:39:27.684+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery prepared: DeliveryJdbc(DeliveryId(ed87bc4f-470a-4bbf-9f1f-932d67513fa9), OrderId(TEST123), Address(Person(Test Person), Place(Test Address 123)))
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

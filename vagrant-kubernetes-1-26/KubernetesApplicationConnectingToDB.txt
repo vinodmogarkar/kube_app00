@@ -1,0 +1,11 @@
+Kubernetes application connecting to DB 
+
+inside kubernetes DB
+external DB
+
+https://stackoverflow.com/questions/50952240/connect-to-local-database-from-inside-minikube-cluster
+
+https://www.endpointdev.com/blog/2022/01/kubernetes-101/
+
+https://stackoverflow.com/questions/51168558/how-to-mount-a-postgresql-volume-using-aws-ebs-in-kubernete
+

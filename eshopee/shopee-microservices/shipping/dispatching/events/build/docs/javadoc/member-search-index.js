@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.home.eshopee.shipping.dispatching","c":"DeliveryDispatched","l":"DeliveryDispatched()","u":"%3Cinit%3E()"},{"p":"com.home.eshopee.shipping.dispatching","c":"DeliveryDispatched","l":"orderId"},{"p":"com.home.eshopee.shipping.dispatching","c":"DeliveryDispatched","l":"when"}];updateSearchResults();

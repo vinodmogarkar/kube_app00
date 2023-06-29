@@ -1,0 +1,35 @@
+https://terryl.in/en/vagrant-up-hangs/
+
+https://www.dell.com/support/kbdoc/en-in/000195980/how-to-enable-or-disable-windows-virtualization-on-dell-systems
+
+https://github.com/hashicorp/vagrant/issues/11777
+
+
+
+https://stackoverflow.com/questions/38463579/vagrant-hangs-at-ssh-auth-method-private-key
+
+
+
+nstall the plugin:
+
+vagrant plugin install vagrant-vbguest 
+
+Let vagrant up it will install the virtual box client if needed. If you want to force the installation you can run 
+
+vagrant vbguest --do install 
+
+
+Consider also upgrading your VM box by:
+
+vagrant box update
+
+==========================
+
+I was able to overcome this error by uninstalling the vagrant-vbguest plugin:
+
+vagrant plugin uninstall vagrant-vbguest
+
+then, 
+
+vagrant halt and vagrant up.
+

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.home.eshopee.warehouse","l":"GoodsFetched"},{"p":"com.home.eshopee.warehouse","l":"GoodsMissed"}];updateSearchResults();

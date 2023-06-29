@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.common.primitives.MoneyTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:34" hostname="DESKTOP-3OMJI0S" time="0.048">
+  <properties/>
+  <testcase name="zero_money_has_a_zero_value()" classname="com.home.eshopee.common.primitives.MoneyTest" time="0.041"/>
+  <testcase name="money_is_multiplied()" classname="com.home.eshopee.common.primitives.MoneyTest" time="0.001"/>
+  <testcase name="money_fails_for_a_negative_value()" classname="com.home.eshopee.common.primitives.MoneyTest" time="0.002"/>
+  <testcase name="money_value()" classname="com.home.eshopee.common.primitives.MoneyTest" time="0.0"/>
+  <testcase name="money_is_added()" classname="com.home.eshopee.common.primitives.MoneyTest" time="0.001"/>
+  <testcase name="money_created_for_a_zero_value()" classname="com.home.eshopee.common.primitives.MoneyTest" time="0.0"/>
+  <testcase name="money_fails_for_a_value_greater_than_one_million()" classname="com.home.eshopee.common.primitives.MoneyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

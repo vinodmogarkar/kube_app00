@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.home.eshopee.sales.catalog"},{"l":"com.home.eshopee.sales.catalog.category"},{"l":"com.home.eshopee.sales.catalog.product"}];updateSearchResults();

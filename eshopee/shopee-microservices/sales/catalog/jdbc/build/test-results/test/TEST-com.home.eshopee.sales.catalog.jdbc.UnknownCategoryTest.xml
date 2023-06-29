@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.catalog.jdbc.UnknownCategoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:50" hostname="DESKTOP-3OMJI0S" time="0.003">
+  <properties/>
+  <testcase name="change_title_noop()" classname="com.home.eshopee.sales.catalog.jdbc.UnknownCategoryTest" time="0.0"/>
+  <testcase name="unknown_category_has_values()" classname="com.home.eshopee.sales.catalog.jdbc.UnknownCategoryTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

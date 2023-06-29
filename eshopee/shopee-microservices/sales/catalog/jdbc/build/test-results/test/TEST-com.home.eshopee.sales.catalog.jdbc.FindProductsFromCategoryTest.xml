@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.catalog.jdbc.FindProductsFromCategoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:50" hostname="DESKTOP-3OMJI0S" time="0.012">
+  <properties/>
+  <testcase name="products_from_a_category_by_uri_are_found()" classname="com.home.eshopee.sales.catalog.jdbc.FindProductsFromCategoryTest" time="0.012"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:50.318+05:30  INFO 12424 --- [    Test worker] c.h.e.s.c.j.FindProductsFromCategoryTest : Starting FindProductsFromCategoryTest using Java 17.0.1 with PID 12424 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\catalog\jdbc)
+2023-04-28T19:38:50.318+05:30  INFO 12424 --- [    Test worker] c.h.e.s.c.j.FindProductsFromCategoryTest : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:50.374+05:30  INFO 12424 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:38:50.396+05:30  INFO 12424 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:867e5ec3-8f49-4f7b-aebb-24ab0801a11e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:38:50.427+05:30  INFO 12424 --- [    Test worker] c.h.e.s.c.j.FindProductsFromCategoryTest : Started FindProductsFromCategoryTest in 0.125 seconds (process running for 2.636)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

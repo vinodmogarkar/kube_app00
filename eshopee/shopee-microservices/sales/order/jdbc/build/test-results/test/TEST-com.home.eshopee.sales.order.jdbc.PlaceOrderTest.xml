@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.order.jdbc.PlaceOrderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:09" hostname="DESKTOP-3OMJI0S" time="0.009">
+  <properties/>
+  <testcase name="order_placed_raises_an_event()" classname="com.home.eshopee.sales.order.jdbc.PlaceOrderTest" time="0.009"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:09.276+05:30  INFO 3336 --- [    Test worker] c.h.e.sales.order.jdbc.PlaceOrderTest    : Starting PlaceOrderTest using Java 17.0.1 with PID 3336 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\order\jdbc)
+2023-04-28T19:39:09.276+05:30  INFO 3336 --- [    Test worker] c.h.e.sales.order.jdbc.PlaceOrderTest    : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:09.325+05:30  INFO 3336 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:09.342+05:30  INFO 3336 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:5ee53602-a051-48ba-bf7b-87ebecf76ea8;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:09.380+05:30  INFO 3336 --- [    Test worker] c.h.e.sales.order.jdbc.PlaceOrderTest    : Started PlaceOrderTest in 0.119 seconds (process running for 2.496)
+2023-04-28T19:39:09.388+05:30  INFO 3336 --- [    Test worker] c.h.eshopee.sales.order.jdbc.OrderJdbc   : Order placed: OrderJdbc(OrderId(TEST123), Money(15190.5), [OrderItem(ProductId(PTEST), Quantity(123))])
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

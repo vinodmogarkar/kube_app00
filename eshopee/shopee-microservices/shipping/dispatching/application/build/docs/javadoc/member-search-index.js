@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.home.eshopee.shipping.dispatching","c":"DispatchingApplication","l":"DispatchingApplication()","u":"%3Cinit%3E()"},{"p":"com.home.eshopee.shipping.dispatching","c":"DispatchingApplication","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();

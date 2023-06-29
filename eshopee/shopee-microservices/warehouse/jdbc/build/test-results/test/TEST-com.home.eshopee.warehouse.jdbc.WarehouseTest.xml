@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.warehouse.jdbc.WarehouseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:56" hostname="DESKTOP-3OMJI0S" time="0.021">
+  <properties/>
+  <testcase name="left_in_stock_returned()" classname="com.home.eshopee.warehouse.jdbc.WarehouseTest" time="0.011"/>
+  <testcase name="product_is_put_into_stock()" classname="com.home.eshopee.warehouse.jdbc.WarehouseTest" time="0.004"/>
+  <testcase name="zero_left_in_stock_returned_for_an_unknown_product()" classname="com.home.eshopee.warehouse.jdbc.WarehouseTest" time="0.004"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:37:56.059+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.WarehouseTest       : Starting WarehouseTest using Java 17.0.1 with PID 10496 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\warehouse\jdbc)
+2023-04-28T19:37:56.059+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.WarehouseTest       : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:37:56.109+05:30  INFO 10496 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:37:56.127+05:30  INFO 10496 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2aaebfe8-6d49-4fa5-bd03-e212e4a1768c;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:37:56.151+05:30  INFO 10496 --- [    Test worker] c.h.e.warehouse.jdbc.WarehouseTest       : Started WarehouseTest in 0.108 seconds (process running for 2.287)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

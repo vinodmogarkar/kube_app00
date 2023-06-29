@@ -1,0 +1,38 @@
+
+gradlew clean build
+
+gradlew bootBuildImage
+
+docker exec -it <containerID> psql -U postgres postgres
+postgres= #\list 
+postgres= #\connect sales
+sales=# \dt
+
+
+gradlew :billing:payment:application:bootRun --args='--spring.profiles.active=postgres' ===========
+
+
+
+gradlew :billing:payment:payment-application:bootRun --args='--spring.profiles.active=postgres,redis'
+
+
+gradlew :sales:cart:cart-application:bootRun --args='--spring.profiles.active=postgres,redis'
+
+
+gradlew :sales:catalog:catalog-application:bootRun --args='--spring.profiles.active=postgres,redis'
+
+
+gradlew :sales:order:order-application:bootRun --args='--spring.profiles.active=postgres,redis'
+
+DEBUG
+gradlew :sales:order:order-application:bootRun --debug-jvm --args='--spring.profiles.active=postgres,redis'
+https://www.jetbrains.com/help/idea/run-and-debug-a-spring-boot-application-using-docker-compose.html#run_docker_compose
+
+gradlew :shipping:delivery:delivery-application:bootRun --args='--spring.profiles.active=postgres,redis'
+
+
+gradlew :shipping:dispatching:dispatching-application:bootRun --args='--spring.profiles.active=postgres,redis'
+
+
+gradlew :warehouse:warehouse-application:bootRun --args='--spring.profiles.active=postgres,redis'
+

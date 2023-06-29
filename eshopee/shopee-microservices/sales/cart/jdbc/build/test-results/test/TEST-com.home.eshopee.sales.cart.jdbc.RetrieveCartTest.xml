@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.cart.jdbc.RetrieveCartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:33" hostname="DESKTOP-3OMJI0S" time="0.004">
+  <properties/>
+  <testcase name="cart_is_retrieved()" classname="com.home.eshopee.sales.cart.jdbc.RetrieveCartTest" time="0.004"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:33.780+05:30  INFO 20240 --- [    Test worker] c.h.e.sales.cart.jdbc.RetrieveCartTest   : Starting RetrieveCartTest using Java 17.0.1 with PID 20240 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\cart\jdbc)
+2023-04-28T19:38:33.781+05:30  INFO 20240 --- [    Test worker] c.h.e.sales.cart.jdbc.RetrieveCartTest   : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:33.829+05:30  INFO 20240 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:38:33.850+05:30  INFO 20240 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d4921644-bbb5-420c-86c3-e862bbc11f41;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:38:33.871+05:30  INFO 20240 --- [    Test worker] c.h.e.sales.cart.jdbc.RetrieveCartTest   : Started RetrieveCartTest in 0.107 seconds (process running for 2.187)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

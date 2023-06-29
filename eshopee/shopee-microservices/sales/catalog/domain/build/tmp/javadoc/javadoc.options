@@ -1,0 +1,20 @@
+-classpath 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\build\\classes\\java\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\build\\resources\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\common\\primitives\\build\\classes\\java\\main;C:\\Users\\ADMIN\\.gradle\\caches\\modules-2\\files-2.1\\org.projectlombok\\lombok\\1.18.26\\8f8cf0372abf564913e9796623aac4c8ea44025a\\lombok-1.18.26.jar'
+-d 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\build\\docs\\javadoc'
+-doctitle 'catalog-domain 2.0-SNAPSHOT API'
+-html5 
+-notimestamp 
+-quiet 
+-windowtitle 'catalog-domain 2.0-SNAPSHOT API'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\category\\Categories.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\category\\Category.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\category\\CategoryId.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\category\\Title.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\category\\Uri.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\FindCategories.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\FindProducts.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\FindProductsFromCategory.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\product\\Description.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\product\\Product.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\product\\ProductId.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\product\\Products.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\catalog\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\catalog\\product\\Title.java'

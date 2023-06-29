@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.warehouse.listeners.WarehouseListenersTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:57" hostname="DESKTOP-3OMJI0S" time="0.406">
+  <properties/>
+  <testcase name="on_delivery_dispatched_removes_fetched_goods()" classname="com.home.eshopee.warehouse.listeners.WarehouseListenersTest" time="0.394"/>
+  <testcase name="on_order_placed_fetches_goods()" classname="com.home.eshopee.warehouse.listeners.WarehouseListenersTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

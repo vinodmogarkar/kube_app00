@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.shipping.delivery.jdbc.DispatchDeliveryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:27" hostname="DESKTOP-3OMJI0S" time="0.007">
+  <properties/>
+  <testcase name="delivery_is_dispatched()" classname="com.home.eshopee.shipping.delivery.jdbc.DispatchDeliveryTest" time="0.007"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:27.252+05:30  INFO 16512 --- [    Test worker] c.h.e.s.d.jdbc.DispatchDeliveryTest      : Starting DispatchDeliveryTest using Java 17.0.1 with PID 16512 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\shipping\delivery\jdbc)
+2023-04-28T19:39:27.253+05:30  INFO 16512 --- [    Test worker] c.h.e.s.d.jdbc.DispatchDeliveryTest      : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:27.300+05:30  INFO 16512 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:27.320+05:30  INFO 16512 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d1662aa8-ef93-44c2-85e3-5d59266dac98;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:27.353+05:30  INFO 16512 --- [    Test worker] c.h.e.s.d.jdbc.DispatchDeliveryTest      : Started DispatchDeliveryTest in 0.118 seconds (process running for 2.336)
+2023-04-28T19:39:27.358+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery prepared: DeliveryJdbc(DeliveryId(efa71b79-d130-4798-8685-8ae2dbe37d55), OrderId(78afabf1-74e8-4bc4-a8ae-bc013d36bafb), Address(Person(Test Test), Place(Test Test 123)))
+2023-04-28T19:39:27.359+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery dispatched: DeliveryJdbc(DeliveryId(efa71b79-d130-4798-8685-8ae2dbe37d55), OrderId(78afabf1-74e8-4bc4-a8ae-bc013d36bafb), Address(Person(Test Test), Place(Test Test 123)))
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

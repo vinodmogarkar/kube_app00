@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.shipping.delivery.PersonTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:22" hostname="DESKTOP-3OMJI0S" time="0.011">
+  <properties/>
+  <testcase name="person_fails_for_a_null_value()" classname="com.home.eshopee.shipping.delivery.PersonTest" time="0.001"/>
+  <testcase name="person_fails_for_an_empty_string()" classname="com.home.eshopee.shipping.delivery.PersonTest" time="0.0"/>
+  <testcase name="person_accepts_valid_values()" classname="com.home.eshopee.shipping.delivery.PersonTest" time="0.002"/>
+  <testcase name="person_value()" classname="com.home.eshopee.shipping.delivery.PersonTest" time="0.001"/>
+  <testcase name="person_fails_for_invalid_values()" classname="com.home.eshopee.shipping.delivery.PersonTest" time="0.005"/>
+  <testcase name="person_value_is_trimmed()" classname="com.home.eshopee.shipping.delivery.PersonTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

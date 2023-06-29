@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.billing.payment.PaymentApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:06" hostname="DESKTOP-3OMJI0S" time="1.91">
+  <properties/>
+  <testcase name="payments_are_listed()" classname="com.home.eshopee.billing.payment.PaymentApplicationTest" time="1.91"/>
+  <system-out><![CDATA[19:38:03.535 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [PaymentApplicationTest]: using SpringBootContextLoader
+19:38:03.540 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.billing.payment.PaymentApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:38:03.541 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.home.eshopee.billing.payment.PaymentApplicationTest]: PaymentApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:38:03.558 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [PaymentApplicationTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+19:38:03.611 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\billing\payment\application\build\classes\java\main\com\home\eshopee\billing\payment\PaymentApplication.class]
+19:38:03.616 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.home.eshopee.billing.payment.PaymentApplication for test class com.home.eshopee.billing.payment.PaymentApplicationTest
+19:38:03.704 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [PaymentApplicationTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:38:03.705 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [PaymentApplicationTest], class annotated with @DirtiesContext [false] with mode [null]
+19:38:03.713 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class com.home.eshopee.billing.payment.PaymentApplicationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:03.922+05:30  INFO 17780 --- [    Test worker] c.h.e.b.payment.PaymentApplicationTest   : Starting PaymentApplicationTest using Java 17.0.1 with PID 17780 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\billing\payment\application)
+2023-04-28T19:38:03.924+05:30  INFO 17780 --- [    Test worker] c.h.e.b.payment.PaymentApplicationTest   : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:04.586+05:30  INFO 17780 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-28T19:38:04.590+05:30  INFO 17780 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-28T19:38:04.624+05:30  INFO 17780 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-04-28T19:38:05.143+05:30  INFO 17780 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-28T19:38:05.154+05:30  INFO 17780 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-28T19:38:05.155+05:30  INFO 17780 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-28T19:38:05.274+05:30  INFO 17780 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-28T19:38:05.276+05:30  INFO 17780 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1155 ms
+2023-04-28T19:38:05.763+05:30  INFO 17780 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-28T19:38:05.945+05:30  INFO 17780 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1663b77a-197d-47f1-bf4b-50be1a0d8e86 user=SA
+2023-04-28T19:38:05.947+05:30  INFO 17780 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-28T19:38:06.953+05:30  INFO 17780 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54975 (http) with context path ''
+2023-04-28T19:38:06.967+05:30  INFO 17780 --- [    Test worker] c.h.e.b.payment.PaymentApplicationTest   : Started PaymentApplicationTest in 3.236 seconds (process running for 4.139)
+2023-04-28T19:38:08.172+05:30  INFO 17780 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28T19:38:08.172+05:30  INFO 17780 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-28T19:38:08.173+05:30  INFO 17780 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

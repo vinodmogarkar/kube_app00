@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.billing.payment.listeners.PaymentListenersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:17" hostname="DESKTOP-3OMJI0S" time="0.394">
+  <properties/>
+  <testcase name="on_order_placed_collects_a_payment()" classname="com.home.eshopee.billing.payment.listeners.PaymentListenersTest" time="0.394"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

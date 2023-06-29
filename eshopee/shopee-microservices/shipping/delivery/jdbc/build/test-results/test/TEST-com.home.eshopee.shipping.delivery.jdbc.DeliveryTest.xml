@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:27" hostname="DESKTOP-3OMJI0S" time="0.151">
+  <properties/>
+  <testcase name="delivery_has_values()" classname="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" time="0.092"/>
+  <testcase name="delivery_can_be_dispatched_only_once()" classname="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" time="0.012"/>
+  <testcase name="delivery_is_prepared(JdbcTemplate)" classname="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" time="0.021"/>
+  <testcase name="delivery_is_found_by_order_id()" classname="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" time="0.006"/>
+  <testcase name="delivery_is_dispatched()" classname="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" time="0.005"/>
+  <testcase name="dispatched_delivery_can_not_be_dispatched()" classname="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" time="0.005"/>
+  <testcase name="delivery_can_be_prepared_only_once()" classname="com.home.eshopee.shipping.delivery.jdbc.DeliveryTest" time="0.006"/>
+  <system-out><![CDATA[19:39:25.757 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.shipping.delivery.jdbc.DeliveryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:39:25.790 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using ContextCustomizers for test class [DeliveryTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+19:39:25.802 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [jakarta/servlet/ServletContext]
+19:39:25.810 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.jdbc.JdbcTestContextBootstrapper - Using TestExecutionListeners for test class [DeliveryTest]: [DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:39:25.811 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [DeliveryTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:26.087+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryTest       : Starting DeliveryTest using Java 17.0.1 with PID 16512 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\shipping\delivery\jdbc)
+2023-04-28T19:39:26.088+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryTest       : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:26.312+05:30  INFO 16512 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:26.828+05:30  INFO 16512 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:d39f80e0-8631-4aa5-bcad-1f2c0bec8209;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:27.063+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryTest       : Started DeliveryTest in 1.214 seconds (process running for 2.046)
+2023-04-28T19:39:27.168+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery dispatched: DeliveryJdbc(DeliveryId(101), OrderId(1001), Address(Person(Test PersonA), Place(Test Place 1)))
+2023-04-28T19:39:27.195+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery prepared: DeliveryJdbc(DeliveryId(aec8acb6-ec3c-4b72-a392-86ec0cb308b0), OrderId(aec8acb6-ec3c-4b72-a392-86ec0cb308b0), Address(Person(Test Test), Place(test)))
+2023-04-28T19:39:27.208+05:30  INFO 16512 --- [    Test worker] c.h.e.s.delivery.jdbc.DeliveryJdbc       : Delivery dispatched: DeliveryJdbc(DeliveryId(101), OrderId(1001), Address(Person(Test PersonA), Place(Test Place 1)))
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

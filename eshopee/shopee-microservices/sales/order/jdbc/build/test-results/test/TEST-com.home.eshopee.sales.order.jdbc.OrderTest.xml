@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.order.jdbc.OrderTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:09" hostname="DESKTOP-3OMJI0S" time="0.074">
+  <properties/>
+  <testcase name="order_contains_at_least_one_item()" classname="com.home.eshopee.sales.order.jdbc.OrderTest" time="0.005"/>
+  <testcase name="placed_order_raises_an_event()" classname="com.home.eshopee.sales.order.jdbc.OrderTest" time="0.056"/>
+  <testcase name="items_are_returned()" classname="com.home.eshopee.sales.order.jdbc.OrderTest" time="0.004"/>
+  <testcase name="order_can_be_placed_only_once()" classname="com.home.eshopee.sales.order.jdbc.OrderTest" time="0.006"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:09.084+05:30  INFO 3336 --- [    Test worker] c.h.eshopee.sales.order.jdbc.OrderTest   : Starting OrderTest using Java 17.0.1 with PID 3336 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\order\jdbc)
+2023-04-28T19:39:09.084+05:30  INFO 3336 --- [    Test worker] c.h.eshopee.sales.order.jdbc.OrderTest   : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:09.135+05:30  INFO 3336 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:09.154+05:30  INFO 3336 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:dd1cbe63-417e-4f11-a835-a78eda5d3ba0;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:09.174+05:30  INFO 3336 --- [    Test worker] c.h.eshopee.sales.order.jdbc.OrderTest   : Started OrderTest in 0.109 seconds (process running for 2.29)
+2023-04-28T19:39:09.213+05:30  INFO 3336 --- [    Test worker] c.h.eshopee.sales.order.jdbc.OrderJdbc   : Order placed: OrderJdbc(OrderId(TEST123), Money(1517.8201), [OrderItem(ProductId(test-1), Quantity(123))])
+2023-04-28T19:39:09.247+05:30  INFO 3336 --- [    Test worker] c.h.eshopee.sales.order.jdbc.OrderJdbc   : Order placed: OrderJdbc(OrderId(TEST123), Money(12.34), [OrderItem(ProductId(test-1), Quantity(123))])
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

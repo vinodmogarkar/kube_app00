@@ -1,0 +1,13 @@
+eshopee:
+  broker:
+    host: localhost
+    port: 6379
+    password:
+    timeout: 1s
+
+spring:
+  redis:
+    host: ${eshopee.broker.host}
+    port: ${eshopee.broker.port}
+    password: ${eshopee.broker.password}
+    timeout: ${eshopee.broker.timeout}

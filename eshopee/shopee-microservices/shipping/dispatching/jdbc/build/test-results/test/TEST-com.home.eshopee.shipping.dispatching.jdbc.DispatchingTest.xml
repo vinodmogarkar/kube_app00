@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.shipping.dispatching.jdbc.DispatchingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:45" hostname="DESKTOP-3OMJI0S" time="0.05">
+  <properties/>
+  <testcase name="dispatching_a_delivery_raises_an_event()" classname="com.home.eshopee.shipping.dispatching.jdbc.DispatchingTest" time="0.05"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:39:44.934+05:30  INFO 5700 --- [    Test worker] c.h.e.s.d.jdbc.DispatchingTest           : Starting DispatchingTest using Java 17.0.1 with PID 5700 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\shipping\dispatching\jdbc)
+2023-04-28T19:39:44.934+05:30  INFO 5700 --- [    Test worker] c.h.e.s.d.jdbc.DispatchingTest           : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:39:44.983+05:30  INFO 5700 --- [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2023-04-28T19:39:45.029+05:30  INFO 5700 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:00d94b4d-f8be-44d9-a166-46c6c14b8cc5;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-04-28T19:39:45.048+05:30  INFO 5700 --- [    Test worker] c.h.e.s.d.jdbc.DispatchingTest           : Started DispatchingTest in 0.131 seconds (process running for 2.257)
+2023-04-28T19:39:45.054+05:30  INFO 5700 --- [    Test worker] c.h.e.s.d.jdbc.DispatchingJdbc           : Order OrderId(DispatchingTest) is being dispatched.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

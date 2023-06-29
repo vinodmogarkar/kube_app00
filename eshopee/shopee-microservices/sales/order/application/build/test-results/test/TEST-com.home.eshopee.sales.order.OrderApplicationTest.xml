@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.order.OrderApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:09:00" hostname="DESKTOP-3OMJI0S" time="1.156">
+  <properties/>
+  <testcase name="order_is_placed()" classname="com.home.eshopee.sales.order.OrderApplicationTest" time="1.156"/>
+  <system-out><![CDATA[19:38:57.083 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [OrderApplicationTest]: using SpringBootContextLoader
+19:38:57.087 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.sales.order.OrderApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:38:57.088 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.home.eshopee.sales.order.OrderApplicationTest]: OrderApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:38:57.105 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [OrderApplicationTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+19:38:57.153 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\order\application\build\classes\java\main\com\home\eshopee\sales\order\OrderApplication.class]
+19:38:57.156 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.home.eshopee.sales.order.OrderApplication for test class com.home.eshopee.sales.order.OrderApplicationTest
+19:38:57.256 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [OrderApplicationTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:38:57.258 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [OrderApplicationTest], class annotated with @DirtiesContext [false] with mode [null]
+19:38:57.270 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class com.home.eshopee.sales.order.OrderApplicationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:57.496+05:30  INFO 1840 --- [    Test worker] c.h.e.sales.order.OrderApplicationTest   : Starting OrderApplicationTest using Java 17.0.1 with PID 1840 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\order\application)
+2023-04-28T19:38:57.497+05:30  INFO 1840 --- [    Test worker] c.h.e.sales.order.OrderApplicationTest   : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:58.149+05:30  INFO 1840 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-28T19:38:58.153+05:30  INFO 1840 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-28T19:38:58.186+05:30  INFO 1840 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-04-28T19:38:58.710+05:30  INFO 1840 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-28T19:38:58.722+05:30  INFO 1840 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-28T19:38:58.723+05:30  INFO 1840 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-28T19:38:58.831+05:30  INFO 1840 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-28T19:38:58.833+05:30  INFO 1840 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
+2023-04-28T19:38:59.334+05:30  INFO 1840 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-28T19:38:59.570+05:30  INFO 1840 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0b4b0e43-ccf9-4307-821d-0f4dad2a0371 user=SA
+2023-04-28T19:38:59.572+05:30  INFO 1840 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-28T19:39:00.551+05:30  INFO 1840 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55023 (http) with context path ''
+2023-04-28T19:39:00.563+05:30  INFO 1840 --- [    Test worker] c.h.e.sales.order.OrderApplicationTest   : Started OrderApplicationTest in 3.272 seconds (process running for 4.188)
+2023-04-28T19:39:01.612+05:30  INFO 1840 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28T19:39:01.612+05:30  INFO 1840 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-28T19:39:01.613+05:30  INFO 1840 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-28T19:39:01.690+05:30  INFO 1840 --- [o-auto-1-exec-1] c.h.eshopee.sales.order.jdbc.OrderJdbc   : Order placed: OrderJdbc(OrderId(order-1), Money(123.5), [OrderItem(ProductId(p-1), Quantity(5))])
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

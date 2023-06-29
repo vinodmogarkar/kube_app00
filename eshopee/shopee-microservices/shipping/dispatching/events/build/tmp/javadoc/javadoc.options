@@ -1,0 +1,8 @@
+-classpath 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\events\\build\\classes\\java\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\events\\build\\resources\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\common\\events\\build\\classes\\java\\main;C:\\Users\\ADMIN\\.gradle\\caches\\modules-2\\files-2.1\\org.projectlombok\\lombok\\1.18.26\\8f8cf0372abf564913e9796623aac4c8ea44025a\\lombok-1.18.26.jar'
+-d 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\events\\build\\docs\\javadoc'
+-doctitle 'dispatching-events 2.0-SNAPSHOT API'
+-html5 
+-notimestamp 
+-quiet 
+-windowtitle 'dispatching-events 2.0-SNAPSHOT API'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\shipping\\dispatching\\events\\src\\main\\java\\com\\home\\eshopee\\shipping\\dispatching\\DeliveryDispatched.java'

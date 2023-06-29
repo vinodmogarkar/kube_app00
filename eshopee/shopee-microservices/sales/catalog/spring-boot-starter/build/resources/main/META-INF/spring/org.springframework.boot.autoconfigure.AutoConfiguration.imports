@@ -1,0 +1,2 @@
+com.home.eshopee.sales.catalog.jdbc.CatalogJdbcConfig
+com.home.eshopee.sales.catalog.rest.CatalogController

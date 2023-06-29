@@ -1,0 +1,38 @@
+
+MetalLB installation 
+======================
+
+# kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/manifests/metallb-native.yaml
+
+
+kubectl apply -f 01_metallb_0_13_9_metallb-native.yaml
+#wait for 2 min 
+
+kubectl apply -f 02_metallb_0_13_9_metallb-native_IPaddresspool.yaml
+#wait for 2 min again
+
+kubectl apply -f 03_metallb_0_13_9_metallb-native_l2advertisement.yaml
+
+
+
+command to cross check installation
+====================================
+
+kubectl get all --namespace metallb-system
+
+==>Deploy sample application 
+kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
+
+==> expose the service
+kubectl expose deployment hello-server --type LoadBalancer --port 80 --target-port 8080
+
+kubectl scale --replicas=3 deployment hello-server
+
+==>call the load-balanced endpoint now:
+for i in {1..5}; do curl http://10.0.0.10; done
+
+
+
+
+
+https://akyriako.medium.com/load-balancing-with-metallb-in-bare-metal-kubernetes-271aab751fb8

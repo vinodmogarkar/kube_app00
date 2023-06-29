@@ -1,0 +1,15 @@
+-classpath 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\build\\classes\\java\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\build\\resources\\main;D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\common\\primitives\\build\\classes\\java\\main;C:\\Users\\ADMIN\\.gradle\\caches\\modules-2\\files-2.1\\org.projectlombok\\lombok\\1.18.26\\8f8cf0372abf564913e9796623aac4c8ea44025a\\lombok-1.18.26.jar'
+-d 'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\build\\docs\\javadoc'
+-doctitle 'cart-domain 2.0-SNAPSHOT API'
+-html5 
+-notimestamp 
+-quiet 
+-windowtitle 'cart-domain 2.0-SNAPSHOT API'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\Cart.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\CartId.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\item\\CartItem.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\item\\ProductId.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\item\\Title.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\ListCartItems.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\RemoveCartItem.java'
+'D:\\CODE\\microservice\\ddd-eshopee-EXPT-modulith\\shopee-microservices\\sales\\cart\\domain\\src\\main\\java\\com\\home\\eshopee\\sales\\cart\\RetrieveCart.java'

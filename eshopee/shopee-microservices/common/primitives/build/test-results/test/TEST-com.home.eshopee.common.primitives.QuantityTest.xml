@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.common.primitives.QuantityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:34" hostname="DESKTOP-3OMJI0S" time="0.004">
+  <properties/>
+  <testcase name="quantity_fails_for_a_value_less_than_zero()" classname="com.home.eshopee.common.primitives.QuantityTest" time="0.001"/>
+  <testcase name="quantity_value()" classname="com.home.eshopee.common.primitives.QuantityTest" time="0.001"/>
+  <testcase name="one_quantity_has_a_value_equals_one()" classname="com.home.eshopee.common.primitives.QuantityTest" time="0.001"/>
+  <testcase name="quantity_is_added()" classname="com.home.eshopee.common.primitives.QuantityTest" time="0.0"/>
+  <testcase name="zero_quantity_has_a_zero_value()" classname="com.home.eshopee.common.primitives.QuantityTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

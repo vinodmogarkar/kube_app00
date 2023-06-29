@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.warehouse.WarehouseApplicationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:07:48" hostname="DESKTOP-3OMJI0S" time="1.149">
+  <properties/>
+  <testcase name="stock_amount_is_returned()" classname="com.home.eshopee.warehouse.WarehouseApplicationTest" time="1.149"/>
+  <system-out><![CDATA[19:37:45.237 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [WarehouseApplicationTest]: using SpringBootContextLoader
+19:37:45.241 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.warehouse.WarehouseApplicationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:37:45.242 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.home.eshopee.warehouse.WarehouseApplicationTest]: WarehouseApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:37:45.261 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [WarehouseApplicationTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+19:37:45.315 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\warehouse\application\build\classes\java\main\com\home\eshopee\warehouse\WarehouseApplication.class]
+19:37:45.319 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.home.eshopee.warehouse.WarehouseApplication for test class com.home.eshopee.warehouse.WarehouseApplicationTest
+19:37:45.395 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [WarehouseApplicationTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:37:45.396 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [WarehouseApplicationTest], class annotated with @DirtiesContext [false] with mode [null]
+19:37:45.404 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test class com.home.eshopee.warehouse.WarehouseApplicationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:37:45.612+05:30  INFO 18016 --- [    Test worker] c.h.e.w.WarehouseApplicationTest         : Starting WarehouseApplicationTest using Java 17.0.1 with PID 18016 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\warehouse\application)
+2023-04-28T19:37:45.614+05:30  INFO 18016 --- [    Test worker] c.h.e.w.WarehouseApplicationTest         : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:37:46.256+05:30  INFO 18016 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-28T19:37:46.259+05:30  INFO 18016 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-28T19:37:46.290+05:30  INFO 18016 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-04-28T19:37:46.821+05:30  INFO 18016 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-04-28T19:37:46.833+05:30  INFO 18016 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-28T19:37:46.834+05:30  INFO 18016 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-28T19:37:46.935+05:30  INFO 18016 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-28T19:37:46.937+05:30  INFO 18016 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1128 ms
+2023-04-28T19:37:47.428+05:30  INFO 18016 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-28T19:37:47.609+05:30  INFO 18016 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b5c9ba96-31b2-4f54-ab7b-9b8a47bff4ba user=SA
+2023-04-28T19:37:47.611+05:30  INFO 18016 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-28T19:37:48.452+05:30  INFO 18016 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54962 (http) with context path ''
+2023-04-28T19:37:48.463+05:30  INFO 18016 --- [    Test worker] c.h.e.w.WarehouseApplicationTest         : Started WarehouseApplicationTest in 3.04 seconds (process running for 3.917)
+2023-04-28T19:37:49.467+05:30  INFO 18016 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28T19:37:49.467+05:30  INFO 18016 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-28T19:37:49.468+05:30  INFO 18016 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-28T19:37:49.490+05:30  WARN 18016 --- [o-auto-1-exec-1] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.home.eshopee.warehouse.rest.WarehouseController
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

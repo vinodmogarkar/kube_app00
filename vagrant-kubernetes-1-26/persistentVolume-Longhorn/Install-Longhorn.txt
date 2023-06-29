@@ -1,0 +1,4 @@
+https://zemuldo.com/blog/kubernetes-on-a-bare-metal-setup.-5e0473b928ad7a001974455b
+
+
+https://github.com/zemuldo/k8s-setup/tree/master/longhorn

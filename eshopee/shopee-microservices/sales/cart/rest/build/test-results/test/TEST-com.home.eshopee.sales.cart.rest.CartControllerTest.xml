@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.home.eshopee.sales.cart.rest.CartControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-04-28T14:08:36" hostname="DESKTOP-3OMJI0S" time="0.211">
+  <properties/>
+  <testcase name="items_are_listed()" classname="com.home.eshopee.sales.cart.rest.CartControllerTest" time="0.159"/>
+  <testcase name="item_is_added_into_the_cart()" classname="com.home.eshopee.sales.cart.rest.CartControllerTest" time="0.034"/>
+  <testcase name="cart_is_emptied()" classname="com.home.eshopee.sales.cart.rest.CartControllerTest" time="0.004"/>
+  <testcase name="item_is_removed_from_the_cart()" classname="com.home.eshopee.sales.cart.rest.CartControllerTest" time="0.01"/>
+  <system-out><![CDATA[19:38:34.990 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.home.eshopee.sales.cart.rest.CartControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:38:35.033 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using ContextCustomizers for test class [CartControllerTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+19:38:35.053 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+19:38:35.054 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+19:38:35.055 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners for test class [CartControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+19:38:35.056 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [CartControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.4)
+
+2023-04-28T19:38:35.324+05:30  INFO 18776 --- [    Test worker] c.h.e.s.cart.rest.CartControllerTest     : Starting CartControllerTest using Java 17.0.1 with PID 18776 (started by ADMIN in D:\CODE\microservice\ddd-eshopee-EXPT-modulith\shopee-microservices\sales\cart\rest)
+2023-04-28T19:38:35.325+05:30  INFO 18776 --- [    Test worker] c.h.e.s.cart.rest.CartControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2023-04-28T19:38:36.286+05:30  INFO 18776 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-04-28T19:38:36.286+05:30  INFO 18776 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-04-28T19:38:36.289+05:30  INFO 18776 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2023-04-28T19:38:36.313+05:30  INFO 18776 --- [    Test worker] c.h.e.s.cart.rest.CartControllerTest     : Started CartControllerTest in 1.217 seconds (process running for 1.992)
+2023-04-28T19:38:36.528+05:30  WARN 18776 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.home.eshopee.sales.cart.rest.CartController
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

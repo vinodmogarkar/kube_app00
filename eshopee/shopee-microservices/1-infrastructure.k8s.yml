@@ -1,0 +1,228 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: eshop     
+  labels:
+    name: redis
+    type: deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: redis
+      type: service
+  template:
+    metadata:
+      labels:
+        name: redis
+        type: service
+    spec:
+      containers:
+        - name: redis
+          image: redis:6
+          ports:
+            - containerPort: 6379
+              name: redis
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: eshop  
+  labels:
+    name: redis
+    type: api
+spec:
+  selector:
+    name: redis
+    type: service
+  ports:
+    - port: 6379
+      name: redis-api
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+  namespace: eshop  
+  labels:
+    name: postgres
+    type: deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: postgres
+      type: service
+  template:
+    metadata:
+      labels:
+        name: postgres
+        type: service
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:13
+          ports:
+            - containerPort: 5432
+              name: redis
+          env:
+            - name: POSTGRES_PASSWORD
+              value: secret
+          volumeMounts:
+            - name: db-data
+              mountPath: /var/lib/postgresql/data
+              subPath: postgres-test
+            - name: init-script
+              mountPath: /docker-entrypoint-initdb.d
+              readOnly: true
+      volumes:
+        - name: db-data
+          persistentVolumeClaim:
+            claimName: postgres-pv-claim
+        - name: init-script
+          configMap:
+            name: postgresql-init-script
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+  namespace: eshop  
+  labels:
+    name: postgres
+    type: api
+spec:
+  selector:
+    name: postgres
+    type: service
+  ports:
+  - port: 5432
+    name: postgres-port
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pv-claim
+  namespace: eshop  
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgresql-init-script
+  namespace: eshop  
+data:
+  create-tables.sql: |
+    -- Contents of your create-tables.sql script
+    CREATE TABLE IF NOT EXISTS payments (
+    id VARCHAR(64) NOT NULL PRIMARY KEY,
+    reference_id VARCHAR(64) NOT NULL,
+    total DECIMAL(10,2),
+    status VARCHAR(50) NOT NULL DEFAULT 'NEW'
+    );
+    CREATE TABLE IF NOT EXISTS cart_items (
+    product_id VARCHAR(64) NOT NULL,
+    title VARCHAR(20) NOT NULL,
+    price DECIMAL(10,2),
+    quantity INT NOT NULL DEFAULT(0),
+    cart_id VARCHAR(64) NOT NULL,
+    PRIMARY KEY (cart_id, product_id, title, price)
+    );
+
+    CREATE TABLE IF NOT EXISTS categories (
+    id VARCHAR(64) NOT NULL PRIMARY KEY,
+    uri VARCHAR(20) NOT NULL UNIQUE,
+    title VARCHAR(20) NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS products (
+    id VARCHAR(64) NOT NULL PRIMARY KEY,
+    title VARCHAR(20) NOT NULL,
+    description VARCHAR(50) NOT NULL DEFAULT(''),
+    price DECIMAL(10,2)
+    );
+
+    CREATE TABLE IF NOT EXISTS products_in_categories (
+    product_id VARCHAR(64) NOT NULL,
+    category_id VARCHAR(64) NOT NULL,
+    PRIMARY KEY (product_id, category_id)
+    );
+    CREATE TABLE IF NOT EXISTS orders (
+    id VARCHAR(64) NOT NULL PRIMARY KEY,
+    total DECIMAL(10,2)
+    );
+
+    CREATE TABLE IF NOT EXISTS order_items (
+    product_id VARCHAR(50) NOT NULL,
+    quantity INT NOT NULL DEFAULT(0),
+    order_id VARCHAR(64) NOT NULL,
+    PRIMARY KEY (order_id, product_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS deliveries (
+    id VARCHAR(64) NOT NULL PRIMARY KEY,
+    order_id VARCHAR(64) NOT NULL UNIQUE,
+    person VARCHAR(50) NOT NULL,
+    place VARCHAR(100) NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS dispatched_deliveries (
+    delivery_id VARCHAR(64) NOT NULL PRIMARY KEY
+    );
+    CREATE TABLE IF NOT EXISTS dispatching_saga (
+    order_id VARCHAR(64) NOT NULL,
+    state VARCHAR(20) NOT NULL,
+    PRIMARY KEY (order_id, state)
+    );
+
+    CREATE TABLE IF NOT EXISTS products_in_stock (
+    product_id VARCHAR(64) NOT NULL PRIMARY KEY,
+    amount INT NOT NULL DEFAULT(0)
+    );
+
+    CREATE TABLE IF NOT EXISTS fetched_products (
+    product_id VARCHAR(64) NOT NULL,
+    amount INT NOT NULL DEFAULT(0),
+    order_id VARCHAR(64) NOT NULL,
+    PRIMARY KEY (order_id, product_id)
+    );
+
+    INSERT INTO categories VALUES
+    ('1', 'books', 'books'),
+    ('2', 'games-toys', 'games and toys'),
+    ('3', 'others', 'others');
+
+    INSERT INTO products VALUES
+    ('1', 'Domain-Driven Design', 'by Eric Evans', 45.00),
+    ('2', 'Object Thinking', 'by David West', 35.00),
+    ('3', 'Release It!', 'by Michael Nygard', 32.50),
+    ('4', 'Chess', 'Deluxe edition of the classic game.', 3.20),
+    ('5', 'Domino', 'In black or white.', 1.50),
+    ('6', 'Klein bottle', 'Two-dimensional manifold made from glass.', 25.00);
+
+    INSERT INTO products_in_categories VALUES
+    ('1', '1'),
+    ('2', '1'),
+    ('3', '1'),
+    ('4', '2'),
+    ('5', '2'),
+    ('6', '3');
+
+    INSERT INTO products VALUES
+    ('p-1', 'Prod 1', 'Prod 1 Desc', 1.00),
+    ('p-2', 'Prod 2', 'Prod 2 Desc', 2.00),
+    ('p-3', 'Prod 3', 'Prod 3 Desc', 3.50);
+
+    INSERT INTO products_in_stock VALUES
+    ('p-1', 1000),
+    ('p-2', 1000),
+    ('p-3', 1000);      
